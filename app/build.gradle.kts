@@ -93,7 +93,7 @@ android {
         }
     }
     defaultConfig {
-        applicationId = "shutiao.reader"
+        applicationId = "com.factorcitrus.juyue"
         versionCode = 10000 + gitCommits
         versionName = version
         minSdk = 24
