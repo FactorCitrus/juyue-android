@@ -25,5 +25,6 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: juyue-android-debug
-          path: app/build/outputs/apk/debug/*.apk
+          # 这个工程的变体是 AppDebug，产物不在 apk/debug/ 下，用递归匹配
+          path: app/build/outputs/apk/**/*.apk
           if-no-files-found: error
